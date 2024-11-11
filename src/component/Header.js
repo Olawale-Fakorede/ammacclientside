@@ -42,7 +42,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'spring', stiffness: 80 }}
-            className="absolute top-0 left-0 h-1/2 w-3/4 bg-white dark:bg-gray-900 p-6 z-50 md:hidden rounded-3xl"
+            className="absolute top-0 left-0 h-1/2 w-3/5 bg-white dark:bg-gray-900 p-6 z-50 md:hidden rounded-3xl"
           >
             <ul className='flex flex-col gap-4 uppercase text-gray-900 dark:text-white'>
               <li onClick={toggleMenu}>Home</li>
