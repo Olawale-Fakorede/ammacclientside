@@ -37,7 +37,7 @@ import backgroundVideo from '../home/aamac_vid.mp4';
 
 const Hero = () => {
   return (
-    <div className="relative h-screen sm:w-1/2 md:w-full overflow-hidden">
+    <div className="relative h-screen sm:w-1/2 md:w-full overflow-hidden text-gray-900 dark:text-white">
       {/* Background video */}
       <video
         className="absolute top-0 left-0 w-auto md:w-full h-1/2 md:h-3/4 object-cover"
@@ -54,13 +54,24 @@ const Hero = () => {
 
       {/* Optional overlay for darkening */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50">
-        <h1 className="font-[pacifico] text-white text-4xl font-bold z-10 flex justify-center items-center mt-24 md:mt-64 lg:mt-36">
+        <h1 className="font-[pacifico] text-white text-4xl font-bold z-10 flex justify-center items-center mt-16 md:mt-64 lg:mt-36">
           Welcome to
         </h1>
 
-        <marquee className="text-4xl font-extrabold whitespace-nowrap font-[Doto] uppercase mt-20" >
+        <marquee className="text-5xl font-extrabold whitespace-nowrap font-[Doto] uppercase mt-14 text-rose-800 dark:text-white" >
                 Adeyinka Adegbite Memorial Anglican Church
         </marquee>
+
+        <div className="flex justify-center items-center mt-10 gap-10">
+          <button className="bg-gradient-to-tr from-rose-600 to-teal-500 text-white px-6 py-3 rounded-lg">
+            Explore More
+          </button>
+
+          <button className="bg-gradient-to-tr from-teal-600 to-rose-500 text-white px-6 py-3 rounded-lg">
+            JOIN US
+          </button>
+        </div>
+    
       </div>
 
     </div>
