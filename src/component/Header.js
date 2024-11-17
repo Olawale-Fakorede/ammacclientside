@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { MdNightsStay, MdSunny } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
-import myLogo from "../assets/IBSD_LOGO.png"
+import myLogo from "../assets/AAMAC_LOGO.png"
 import { motion } from 'framer-motion';
 
 const Header = ({ darkMode, setDarkMode }) => {
@@ -17,11 +17,11 @@ const Header = ({ darkMode, setDarkMode }) => {
             <img 
                 src={myLogo} 
                 alt='LOGO'
-                className='h-10 w-10 md:h-12 md:w-12 lg:h-14 lg:w-14 rounded-full'
+                className='h-12 w-14 md:h-14 md:w-16 lg:h-16 lg:w-20 rounded-full'
             />
             
             <IoMenu 
-              className='h-7 w-5 ml-48 visible md:hidden cursor-pointer' 
+              className='h-7 w-5 ml-44 visible md:hidden cursor-pointer' 
               onClick={toggleMenu}
             />
 
